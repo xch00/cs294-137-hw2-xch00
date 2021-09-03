@@ -30,8 +30,9 @@ You will also need to push your project folder to your Github Classroom assignme
 ## Setting Up Your Project:
 Note the assets used in this assignmente was tested on Unity 2020.3.17f1. It may work in other versions too.
 
+Download the SimEnvironments.unitypackage from Google Drive : https://drive.google.com/file/d/13Xf_rKldxM0mgLmgZgbKe2Dg_VzIJBgL/view?usp=sharing 
 
-In Unity Hub create a new 3D Project. Import the ARSimulation.unitypackage using Assets->Import 
+In Unity Hub create a new 3D Project. Import the ARFoundationSim.unitypackage and SimEnvironments.unitypackage using Assets->Import 
 ![i1.JPG](/Instructions/i1.JPG)
 
 First delete the main camera that is placed in the scene by default by unity. We will replace this by it’s AR Equivalent. Search for the "AR Camera" Prefab and drag it into the scene hierarchy.

@@ -6,7 +6,7 @@ It will be up to you to use what you have learned to make a game. Your game must
 
 ## Logistics
 
-After you have accepted the assignment, a seperate repo "hw2-ar-game-YourGitID" should have been created. You will push your assignment code to this, and this will be used for grading.
+After you have accepted the assignment, a seperate repo "hw2-simulated-ar-YourGitID" should have been created. You will push your assignment code to this, and this will be used for grading.
 
 ### Deadline
 
@@ -69,13 +69,12 @@ Next we will add the script to actually place the game board. To your AR Session
 
 Set up your script as shown below. For all code is this document, be sure to read the code and comments to understand what the code is doing. 
 ```C++
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// These allow us to use the ARFoundation API.
-using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
-
+//This allows us to user the AR Foundation simulator functions
+using cs294_137.hw2;
 public class PlaceGameBoard : MonoBehaviour
 {
     // Public variables can be set from the unity UI.
@@ -93,6 +92,9 @@ public class PlaceGameBoard : MonoBehaviour
         // GetComponent allows us to reference other parts of this game object.
         raycastManager = GetComponent<ARRaycastManager>();
         planeManager = GetComponent<ARPlaneManager>();
+
+        //We want to place our board only on hortizontal planes. So we tell the plane manager only to detect those
+        planeManager.detectionMode = PlaneDetectionMode.Horizontal;
     }
 
     // Update is called once per frame.
@@ -100,27 +102,27 @@ public class PlaceGameBoard : MonoBehaviour
     {
         if (!placed)
         {
-            if (Input.touchCount > 0)
+            if (Input.GetMouseButtonDown(0))
             {
-                Vector2 touchPosition = Input.GetTouch(0).position;
+                Vector2 touchPosition = Input.mousePosition;
 
                 // Raycast will return a list of all planes intersected by the
                 // ray as well as the intersection point.
                 List<ARRaycastHit> hits = new List<ARRaycastHit>();
                 if (raycastManager.Raycast(
-                    touchPosition, hits, TrackableType.PlaneWithinPolygon))
+                    touchPosition, ref hits, TrackableType.PlaneWithinPolygon))
                 {
                     // The list is sorted by distance so to get the location
                     // of the closest intersection we simply reference hits[0].
-                    var hitPose = hits[0].pose;
+                    var hitPosition = hits[0].hitPosition;
                     // Now we will activate our game board and place it at the
                     // chosen location.
                     gameBoard.SetActive(true);
-                    gameBoard.transform.position = hitPose.position;
+                    gameBoard.transform.position = hitPosition;
                     placed = true;
                     // After we have placed the game board we will disable the
                     // planes in the scene as we no longer need them.
-                    //planeManager.SetTrackablesActive(false); //For older versions of AR foundation
+                    
                     planeManager.detectionMode = PlaneDetectionMode.None;
 
                 }
@@ -128,7 +130,7 @@ public class PlaceGameBoard : MonoBehaviour
         }
         else
         {
-            // The plane manager will set newly detected planes to active by 
+            // The plane manager will set all detected planes to active by 
             // default so we will continue to disable these.
             //planeManager.SetTrackablesActive(false); //For older versions of AR foundation
             planeManager.detectionMode = PlaneDetectionMode.None;
@@ -151,6 +153,7 @@ public class PlaceGameBoard : MonoBehaviour
         return placed;
     }
 }
+
 ```
 When you return to the unity editor you should see your script component now has a field for “Game Board”. Drag your game board object from your scene hierarchy into this field. 
 

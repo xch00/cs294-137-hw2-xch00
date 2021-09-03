@@ -1,6 +1,6 @@
 # HW2: Building Unity Game in Simulated AR
 
-In this homework you will be building a simple AR Game. The exact game you make is up to you and can be very simple (think Board games such as Tic-Tac-Toe). This document will help you set up an AR mobile device application using Unity and AR Foundation. It will guide you through the steps of: finding planes in a scene, selecting your game board location, and creating basic interaction elements. 
+In this homework you will be building a simple AR Game. The exact game you make is up to you and can be very simple (think Board games such as Tic-Tac-Toe). This document will help you set up an unity game in a simulate environment. It will guide you through the steps of: finding planes in a scene, selecting your game board location, and creating basic interaction elements. 
 
 It will be up to you to use what you have learned to make a game. Your game must have an end condition and indicate to the user the result of the game (ie. whether they have won or lost, or what their final score is). 
 
@@ -22,13 +22,14 @@ This HW is to be completed individually. You are welcome to discuss the various 
 ### 1. Video
 You will make a 2 minute video showing off the features of your game. The video must include a verbal description of your project and it’s features. You must also include captions corresponding to the audio. This will be an important component of all your homework assignments and your final project so it is best you get this set up early. 
 
-We recommend using the screen recorder, you installed in HW0 to record video of your game in action. 
 
 ### 2. Code
 You will also need to push your project folder to your Github Classroom assignment's repo.
 
 
 ## Setting Up Your Project:
+Note the assets used in this assignmente was tested on Unity 2020.3.17f1. It may work in other versions too.
+
 
 In Unity Hub create a new 3D Project. Import the ARSimulation.unitypackage using Assets->Import 
 ![i1.JPG](/Instructions/i1.JPG)
@@ -377,12 +378,3 @@ Build and run your game. After placing your game board you should now be able to
 ## Finish your game:
 
 The rest is up to you! Using these techniques you need to now design your own game that can run in this simulated environment.
-
-
-
-
-===============================================================================
-
-
-
-If you need additional instruction, Unity has a variety of general game making tutorials. Also, check out the AR Foundation samples if you wish to add additional AR elements to your game: https://github.com/Unity-Technologies/arfoundation-samples

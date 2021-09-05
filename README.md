@@ -6,11 +6,13 @@ It will be up to you to use what you have learned to make a game. Your game must
 
 ## Logistics
 
-After you have accepted the assignment, a seperate repo "hw2-simulated-ar-YourGitID" should have been created. You will push your assignment code to this, and this will be used for grading.
+Please fork this assignment into a private repo. Rename the repo to cs294-137-hw2-YourGitID 
+
+Note, this stack overflow post covers on how to fork into a private repo: https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-public-repository-private
 
 ### Deadline
 
-HW2 is due Friday xx/xx/xxxx, 11:59PM. Both your code and video need to be turned in for your submission to be complete; HWs which are turned in after 11:59pm will use one of your slip days -- there are no slip minutes or slip hours.
+HW2 is due Friday 09/17/2021, 11:59PM. Both your code and video need to be turned in for your submission to be complete; HWs which are turned in after 11:59pm will use one of your slip days -- there are no slip minutes or slip hours. The root folder of the repositoy should contain a text file with the link to the Video (can be hosted on Youtube or other video sharing sites). 
 
 ### Academic honesty
 Please do not post code to a public GitHub repository, even after the class is finished, since these HWs will be reused both  in the future.
@@ -24,7 +26,11 @@ You will make a 2 minute video showing off the features of your game. The video 
 
 
 ### 2. Code
-You will also need to push your project folder to your Github Classroom assignment's repo.
+You will also need to push your project folder to your your private repo. 
+Add the following github IDs so that we can access these:
+
+bjo3rn
+tkbala
 
 
 ## Setting Up Your Project:

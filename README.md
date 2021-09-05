@@ -32,6 +32,7 @@ Add the following github IDs so that we can access these:
 bjo3rn
 tkbala
 
+Submit a link to your repo on bCourses; do not modify your repo after the submission deadline.
 
 ## Setting Up Your Project:
 Note the assets used in this assignmente was tested on Unity 2020.3.17f1. It may work in other versions too.

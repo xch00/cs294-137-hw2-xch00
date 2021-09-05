@@ -49,7 +49,7 @@ Next, we we load a sample simulation scene. Search for "Miniworld_FloorPlan229_p
 ![i2.JPG](/Instructions/i3.JPG)
 
 
-We see that, the AR camera is seeing the wrong parts of the seen. Set the transform values through the inspector, that will make sure AR camers gets a good view of the scene. For instance, here's a set of values you may use:
+We see that, the AR camera is seeing the wrong parts of the scene. Set the transform values through the inspector, that will make sure AR camers gets a good view of the scene. For instance, here's a set of values you may use:
 ![i2.JPG](/Instructions/i2.JPG)
 
 

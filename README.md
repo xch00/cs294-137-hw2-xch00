@@ -19,7 +19,7 @@ Please do not post code to a public GitHub repository, even after the class is f
 
 This HW is to be completed individually. You are welcome to discuss the various parts of the HWs with your classmates, but you must implement the HWs yourself -- you should never look at anyone else's code.
 
-## Deliverables:
+## Deliverables: 
 
 ### 1. Video
 You will make a 2 minute video showing off the features of your game. The video must include a verbal description of your project and it’s features. You must also include captions corresponding to the audio. This will be an important component of all your homework assignments and your final project so it is best you get this set up early. 
@@ -178,7 +178,7 @@ First let’s set the button position and size to be more reasonable than the de
 
 If you build and run now you should see a button present at the bottom of your screen, but clicking it doesn’t actually do anything. 
 
-To change this, in your button inspector, scroll down to the field labeled “On Click”. Press the + selection at the bottom of this field. Where the word “none” appears now, drag your AR Session Origin from your scene hierarchy into this location. Lastly change the “No Function” selection to PlaceGameBoard->AllowMoveGameBoard(). If you build and run now, after placing your game board, pressing this button should bring back the place visualization and allow you to move your game board to a new location. 
+To change this, in your button inspector, scroll down to the field labeled “On Click”. Press the + selection at the bottom of this field. Where the word “none” appears now, drag your Managers from your scene hierarchy into this location. Lastly change the “No Function” selection to PlaceGameBoard->AllowMoveGameBoard(). If you build and run now, after placing your game board, pressing this button should bring back the place visualization and allow you to move your game board to a new location. 
 
 ![image3.png](/Instructions/image3.png)
 
@@ -260,7 +260,7 @@ Next let’s add a tag to our object to make it easy to tell that this object is
 
 ![image4.png](/Instructions/image4.png)
 
-Now we need to create the script to actually perform the raycasting to this object. In AR Session Origin, Add Component -> New Script and name it “ARButton Manager”. In this script place the following: 
+Now we need to create the script to actually perform the raycasting to this object. In Managers, Add Component -> New Script and name it “ARButton Manager”. In this script place the following: 
 
 ```C++
 using System.Collections;

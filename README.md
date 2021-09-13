@@ -73,7 +73,7 @@ For now, we will also deactivate our game board so that will not be present at t
 
 Now we need to set up the code that allows the user to choose a position for the game board. Since we don’t know what the area will look like in advance, we will let the user choose where they want to place the game board. To the Managers, we will add the component ARRaycastManager. Raycasting is how we convert a 2D position on the screen to a 3D position in world space. The ARRaycastManager lets us raycast to the planar regions detected by the AR Plane Manager we created in the previous step. 
 
-Next we will add the script to actually place the game board. To your AR Session Origin select Add Component -> New Script and name it PlaceGameBoard. Double click on the script (in the box next to the word script, not the component itself) to open it. 
+Next we will add the script to actually place the game board. To your Managers select Add Component -> New Script and name it PlaceGameBoard. Double click on the script (in the box next to the word script, not the component itself) to open it. 
 
 Set up your script as shown below. For all code is this document, be sure to read the code and comments to understand what the code is doing. 
 ```C++

@@ -291,11 +291,14 @@ public class ARButtonManager : MonoBehaviour
             // Convert the 2d screen point into a ray.
             Ray ray = arCamera.ScreenPointToRay(touchPosition);
             // Check if this hits an object within 100m of the user.
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit,100))
+            //RaycastHit hit;
+            //if (Physics.Raycast(ray, out hit,100))
+            RaycastHit[] hits;
+            hits = Physics.RaycastAll(ray, 100.0F);
+            for (int i = 0; i < hits.Length; i++)
             {
                 // Check that the object is interactable.
-                if(hit.transform.tag=="Interactable")
+                if(hits[i].transform.tag=="Interactable")
                     // Call the OnTouch function.
                     // Note the use of OnTouch3D here lets us
                     // call any class inheriting from OnTouch3D.

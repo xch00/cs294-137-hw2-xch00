@@ -302,7 +302,7 @@ public class ARButtonManager : MonoBehaviour
                     // Call the OnTouch function.
                     // Note the use of OnTouch3D here lets us
                     // call any class inheriting from OnTouch3D.
-                    hit.transform.GetComponent<OnTouch3D>().OnTouch();
+                    hits[i].transform.GetComponent<OnTouch3D>().OnTouch();
             }
         }
     }

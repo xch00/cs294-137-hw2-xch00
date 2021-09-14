@@ -266,7 +266,7 @@ Now we need to create the script to actually perform the raycasting to this obje
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using cs294.hw2;
+using cs294_137.hw2;
 
 public class ARButtonManager : MonoBehaviour
 {

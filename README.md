@@ -46,7 +46,7 @@ First delete the main camera that is placed in the scene by default by unity. We
 
 
 Next, we we load a sample simulation scene. Search for "Miniworld_FloorPlan229_physics" prefab and load this into the scene. This is the virtual environment in which you will spawn your AR game. This contains the scene, as well as any associated AR planes in it.
-![i2.JPG](/Instructions/i3.JPG)
+![i3.JPG](/Instructions/i3.JPG)
 
 
 We see that, the AR camera is seeing the wrong parts of the scene. Set the transform values through the inspector, that will make sure AR camers gets a good view of the scene. For instance, here's a set of values you may use:
@@ -55,7 +55,7 @@ We see that, the AR camera is seeing the wrong parts of the scene. Set the trans
 
 Now to help interface with all the AR Planes and their associated interations, we will add our ARPlaneManager, and ARRaycastManager into the scene. To do this, create a new game Object in the scene hierarchy and call it "Managers". In the inspection tab select Add Component and in the search box type “AR Plane Manager” and add it. You will notice that the plane prefab field is empty. We will fill this field by creating our own plane prefab. 
 
-![i2.JPG](/Instructions/i4.JPG)
+![i4.JPG](/Instructions/i4.JPG)
 
 Now, save the scene. Click Play. In the scene hierarchy, select "Managers" and Change the Value of "Detection Mode". You should observe that different types of planes are detected in the AR scene.
 
@@ -180,8 +180,7 @@ If you build and run now you should see a button present at the bottom of your s
 
 To change this, in your button inspector, scroll down to the field labeled “On Click”. Press the + selection at the bottom of this field. Where the word “none” appears now, drag your Managers from your scene hierarchy into this location. Lastly change the “No Function” selection to PlaceGameBoard->AllowMoveGameBoard(). If you build and run now, after placing your game board, pressing this button should bring back the place visualization and allow you to move your game board to a new location. 
 
-![image3.png](/Instructions/image3.png)
-NOTE: THE ABOVE SCREENSHOT IS INCORRECT. It should say 'Managers' below the 'Runtime Only'  dropdown. It should NOT say 'AR Session Origin'.
+![i6.PNG](/Instructions/i6.PNG)
 Lastly let’s change the button label to something more intuitive than “Button”. Expand your Button object in the scene hierarchy and select the Text object that appears below it. Change the text field under “Text (Script)” in the inspector to “Move Board”. Build and Run to see your changes. 
 
 Making A Simple Interactable Object:

@@ -181,7 +181,7 @@ If you build and run now you should see a button present at the bottom of your s
 To change this, in your button inspector, scroll down to the field labeled “On Click”. Press the + selection at the bottom of this field. Where the word “none” appears now, drag your Managers from your scene hierarchy into this location. Lastly change the “No Function” selection to PlaceGameBoard->AllowMoveGameBoard(). If you build and run now, after placing your game board, pressing this button should bring back the place visualization and allow you to move your game board to a new location. 
 
 ![image3.png](/Instructions/image3.png)
-
+NOTE: THE ABOVE SCREENSHOT IS INCORRECT. It should say 'Managers' below the 'Runtime Only'  dropdown. It should NOT say 'AR Session Origin'.
 Lastly let’s change the button label to something more intuitive than “Button”. Expand your Button object in the scene hierarchy and select the Text object that appears below it. Change the text field under “Text (Script)” in the inspector to “Move Board”. Build and Run to see your changes. 
 
 Making A Simple Interactable Object:

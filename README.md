@@ -29,8 +29,8 @@ You will make a 2 minute video showing off the features of your game. The video 
 You will also need to push your project folder to your your private repo. 
 Add the following github IDs so that we can access these:
 
-bjo3rn
-Weiyu
+bjo3rn 
+o0WeiyuFeng0o
 
 **Submit a link to your repo and your video on bCourses.** Do not modify your repo after the submission deadline.
 

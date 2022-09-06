@@ -12,7 +12,7 @@ Note, this stack overflow post covers on how to fork into a private repo: https:
 
 ### Deadline
 
-HW2 is due Sunday 09/19/2021, 11:59PM Pacific. Both your code and video need to be turned in for your submission to be complete; HWs which are turned in after 11:59pm will use one of your slip days -- there are no slip minutes or slip hours. The root folder of the repositoy should contain a text file with the link to the Video (can be hosted on Youtube or other video sharing sites). 
+HW2 is due Sunday 09/16/2022, 11:59PM Pacific. Both your code and video need to be turned in for your submission to be complete; HWs which are turned in after 11:59pm will use one of your slip days -- there are no slip minutes or slip hours. The root folder of the repositoy should contain a text file with the link to the Video (can be hosted on Youtube or other video sharing sites). 
 
 ### Academic honesty
 Please do not post code to a public GitHub repository, even after the class is finished, since these HWs will be reused both  in the future.

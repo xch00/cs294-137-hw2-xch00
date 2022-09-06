@@ -30,7 +30,7 @@ You will also need to push your project folder to your your private repo.
 Add the following github IDs so that we can access these:
 
 bjo3rn
-tkbala
+Weiyu
 
 **Submit a link to your repo and your video on bCourses.** Do not modify your repo after the submission deadline.
 

@@ -30,7 +30,7 @@ You will also need to push your project folder to your your private repo.
 Add the following github IDs so that we can access these:
 
 bjo3rn 
-o0WeiyuFeng0o
+jamesdsmith
 
 **Submit a link to your repo and your video on bCourses.** Do not modify your repo after the submission deadline.
 
@@ -183,7 +183,7 @@ To change this, in your button inspector, scroll down to the field labeled “On
 ![i6.PNG](/Instructions/i6.PNG)
 Lastly let’s change the button label to something more intuitive than “Button”. Expand your Button object in the scene hierarchy and select the Text object that appears below it. Change the text field under “Text (Script)” in the inspector to “Move Board”. Build and Run to see your changes. 
 
-Making A Simple Interactable Object:
+### Making A Simple Interactable Object:
 
 Making interactable objects in AR is fairly easy. The short version is, we just have to check if a raycast from a user’s touch intersects with an interactable object, and call a function from that object. 
 

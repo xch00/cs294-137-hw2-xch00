@@ -3,7 +3,8 @@
 In this homework you will be building a simple AR Game. The exact game you make is up to you and can be very simple (think Board games such as Tic-Tac-Toe). This document will help you set up an unity game in a simulate environment. It will guide you through the steps of: finding planes in a scene, selecting your game board location, and creating basic interaction elements. 
 
 It will be up to you to use what you have learned to make a game. Your game must have an end condition and indicate to the user the result of the game (ie. whether they have won or lost, or what their final score is). 
-
+---
+HW2[https://youtu.be/anLk0ITxypI]
 ## Logistics
 
 Please fork this assignment into a private repo. Rename the repo to cs294-137-hw2-YourGitID 
